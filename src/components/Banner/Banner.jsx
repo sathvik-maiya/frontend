@@ -27,10 +27,10 @@ const Banner = () => {
                 <div className="flex  items-center py-10 md:w-1/2 px-5 md:px-5 md:pb-20 md:pt-10  lg:px-[4.5rem] ">
                     <div className="text-left ">
                         <h2 className="text-[48px] all-text font-bold leading-[3.7rem]  text-[#FFFFFF] md:text-[48px] max-sm:text-[40px]
-                        max-sm:text-center">
+                        max-sm:text-center max-md:text-center">
                             Let's elevate your clinic together!
                         </h2>
-                        <p style={{ lineHeight: "1.5rem" }} className="w-full text-[16px]  text-[#FFFFFF] sm:text-lg md:text-[16px] mt-[20px] mb-[5px] max-sm:text-center max-sm:mb-[15px]">
+                        <p style={{ lineHeight: "1.5rem" }} className="w-full text-[16px]  text-[#FFFFFF] sm:text-lg md:text-[16px] mt-[20px] mb-[5px] max-sm:text-center max-sm:mb-[15px] max-md:text-center">
                             Our innovative solution is designed to seamlessly integrate into your clinic, transforming the way you manage appointments, streamline operations, and prioritize patient care.
                         </p>
 

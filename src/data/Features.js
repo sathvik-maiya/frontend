@@ -19,7 +19,7 @@ import fr6 from '../Assets/Features/fea6.png'
    {
      img: fr3,
      title: "Effortless Data Access and Storage",
-     des: "Now you can store and access crucial information - from patient records to medical histories within seconds. Enjoy quick and organized data retrieval for informed decision-making, all at your fingertips.",
+     des: "Our efficient data storage solutions ensure that your clinic's records are organized, easily accessible, and compliant with industry regulations.",
    },
    {
      img: fr4,

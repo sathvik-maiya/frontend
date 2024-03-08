@@ -5,33 +5,33 @@ import { Link } from 'react-router-dom'
 const Footer = () => {
   
   return (
-    <footer className="bg-[#BCBCBC] w-full overflow-hidden text-[#000000]">
-      <div className="grid md:grid-cols-3  lg:container lg:mx-auto lg:py-6 lg:px-16 ">
+    <footer className="bg-[#FFFFFF] w-full overflow-hidden text-[#000000] max-md:mt-[20px] max-sm:mt-[20px]">
+      <div className="grid md:grid-cols-3 max-md:grid-cols-3 lg:container lg:mx-auto lg:py-6 lg:px-16 max-sm:grid">
         {/* images logo */}
-        <div className="col-span-4 md:col-span-1 px-4 py-4  md:p-5 ">
+        <div className="col-span-4 md:col-span-1 max-sm:col-span-4 max-md:col-span-1 px-4 py-4  md:p-5  max-md:p-5">
           <a href="#" className="flex items-center">
             <img className='' src={footerimg} alt="FlowBite Logo" />
           </a>
-          <p className=' py-5 text-base'>Join us on this transformative journey as we redefine healthcare together. </p>
+          <p className=' py-5 text-base max-md:text-[11px]'>Join us on this transformative journey as we redefine healthcare together. </p>
 
-          <div className='hidden md:block'>
+          <div className='hidden md:block max-md:block max-sm:hidden'>
             <div className="flex items-center flex-wrap gap-3 w-full flex-row">
-              <a href="#" className="md:w-fit bg-[#11111E]  text-white rounded-lg inline-flex items-center justify-center  py-1 md:py-[3px] ">
-                <i className="fa-brands fa-google-play text-xl md:text-3xl px-1 "></i>
+              <a href="#" className="md:w-fit bg-[#11111E]  text-white rounded-lg inline-flex items-center justify-center  py-1 md:py-[3px] max-md:py-[3px] max-md:px-[20px]">
+                <i className="fa-brands fa-google-play text-xl md:text-3xl px-1 max-md:text-3xl"></i>
                 <div className="">
                   <div className="text-[10px] uppercase md:tracking-widest">Go it on</div>
                   <div className="-mt-1 text-nowrap text-sm md:text-xl font-normal">Googel Play</div>
                 </div>
               </a>
               <a href="#" className=" md:w-fit bg-[#11111E]  text-white rounded-lg inline-flex items-center px-4 lg:px-3 py-[3px] ">
-                <i className="fa-brands fa-apple  text-xl md:text-4xl px-1 md:px-2"></i>
+                <i className="fa-brands fa-apple  text-xl md:text-4xl max-md:text-4xl px-1 md:px-2 max-md:px-2"></i>
                 <div className="text-center rtl:text-right ">
                   <div className="text-[10px] md:tracking-widest">Download on the</div>
                   <div className="-mt-1  font-sans text-sm md:text-xl font-normal">App Store</div>
                 </div>
               </a>
             </div>
-            <div className='flex lg:justify-start gap-5 py-5  px-3'>
+            <div className='flex lg:justify-start gap-5 py-5 max-md:gap-2 px-3'>
               <div className='bg-[#4BBE9E] py-[5px] px-[8px] shadow-2xl rounded-lg'>
                 <button>
                   <i className="fa-brands fa-facebook-f text-xl"></i>
@@ -60,14 +60,14 @@ const Footer = () => {
 
             </div>
             <div className="">
-              <p className="text-base  ">© Copyright 2024 HealTether. All Rights Reserved</p>
+              <p className="text-base max-md:text-[13px]  ">© Copyright 2024 HealTether. All Rights Reserved</p>
             </div>
           </div>
         </div>
         {/* sitemap section */}
-        <div className='col-span-4 md:col-span-1 p-3 md:p-5'>
+        <div className='col-span-4 md:col-span-1 p-3 md:p-5 max-md:p-5 max-md:col-span-1 max-sm:col-span-4'>
           <h2 className="mb-2 text-base font-semibold  ">Sitemap</h2>
-          <div className='grid grid-cols-2 md:grid-cols-1 lg:grid-cols-2'>
+          <div className='grid grid-cols-2 md:grid-cols-1 max-sm:grid-cols-2 max-md:grid-cols-1 lg:grid-cols-2'>
             <div className=' text-[16px]   font-normal'>
               <p className="py-1">
                 <Link to={'/'} className="hover:underline">Home</Link>
@@ -82,7 +82,7 @@ const Footer = () => {
                 <Link to={'/'} className="hover:underline">Help</Link>
               </p>
             </div>
-            <div className=' text-[16px]   font-normal'>
+            <div className=' text-[16px]   max-md:mt-[20px] max-sm:mt-0 font-normal'>
               <p className="py-1">
                 <Link to={'/'} className="hover:underline">Privacy Policy</Link>
               </p>
@@ -96,7 +96,7 @@ const Footer = () => {
           </div>
         </div>
         {/* contact section */}
-        <div className='col-span-4 md:col-span-1  p-3 md:p-5 '>
+        <div className='col-span-4 md:col-span-1 max-md:col-span-1 p-3 md:p-5 max-md:p-5 max-sm:col-span-4 '>
           <h2 className="mb-2 text-base font-semibold ">Contact</h2>
           <ul className=" font-normal text-[16px] ">
             <li className="py-2 ">
@@ -121,13 +121,13 @@ const Footer = () => {
           </ul>
         </div>
         {/* mobile view show  */}
-        <div className='block md:hidden col-span-4 md:col-span-1  p-3 '>
-          <div className="items-center flex gap-3 w-full flex-row">
+        <div className='block md:hidden col-span-4 md:col-span-1 max-sm:col-span-4 max-md:hidden max-sm:block p-3 max-sm:ml-4'>
+          <div className="items-center flex gap-3 w-full flex-row ">
             <Link to={'/'} className="md:w-fit bg-[#11111E]  text-white rounded-lg inline-flex items-center justify-center px-3 py-1 md:py-[3px] ">
               <i className="fa-brands fa-google-play text-xl md:text-3xl px-1 md:px-1"></i>
               <div className=" rtl:text-right">
                 <div className="text-[10px] uppercase md:tracking-widest">Go it on</div>
-                <div className="-mt-1 text-nowrap text-sm md:text-xl font-normal">Googel Play</div>
+                <div className="-mt-1 text-nowrap text-sm md:text-xl font-normal">Google Play</div>
               </div>
             </Link>
             <Link to={'/'} className=" md:w-fit bg-[#11111E]  text-white rounded-lg inline-flex items-center  px-3 py-[3px] ">
@@ -165,8 +165,8 @@ const Footer = () => {
               </button>
             </div>
           </div>
-          <div className="">
-            <p className="text-sm md:text-base text-center text-[#FDFCFD] ">© Copyright 10 HealTether. All Rights Reserved</p>
+          <div > 
+            <p className="text-sm md:text-base  text-[#00000] max-sm:w-[250px] ">© Copyright 10 HealTether. All Rights Reserved</p>
           </div>
         </div>
       </div>

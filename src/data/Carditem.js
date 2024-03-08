@@ -10,7 +10,7 @@ export const Carditem = [
         id: "2",
         name: "Integrated in",
         record: "500+",
-        fas: "Hospitals and Clinics"
+        fas: "Clinics"
     },
     {
         id: "3",
